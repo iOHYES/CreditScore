@@ -159,6 +159,7 @@
 		0CDC988325EBD34700B4AAD6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0CDC98A925EBD4A000B4AAD6 /* Response.swift */,
 				0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */,
 				0CDC98A025EBD48500B4AAD6 /* CreditScoreAPI.swift */,
 				0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */,
@@ -186,7 +187,6 @@
 		0CDC98A825EBD49300B4AAD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC98A925EBD4A000B4AAD6 /* Response.swift */,
 				0CDC98AF25EBD58800B4AAD6 /* CreditReport.swift */,
 			);
 			path = Model;
@@ -512,6 +512,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ClearScore/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ClearScore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uc.ClearScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -532,6 +533,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ClearScore/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ClearScore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,7 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uc.ClearScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

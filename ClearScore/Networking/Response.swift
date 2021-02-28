@@ -7,10 +7,8 @@
 
 import Foundation
 
-struct Response {
-}
-
-extension Response {
+struct Response
+{
   public func decode<T: Codable>(_ type: T.Type, data: Data) throws -> T?
   {
         let jsonDecoder = JSONDecoder()
@@ -22,3 +20,4 @@ extension Response {
         }
     }
 }
+

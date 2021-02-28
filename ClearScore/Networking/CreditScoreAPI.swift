@@ -13,7 +13,6 @@ enum CreditScoreAPI {
 
 extension CreditScoreAPI: EndpointType
 {
-  
   var baseURL: URL {
     switch self {
     case .mockCreditValues :
