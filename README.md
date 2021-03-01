@@ -45,7 +45,7 @@ You will need to configure your development team in the app target's **"Signing 
 9.  **Extensions**: Used for adding more functionality to class and modularizing the code.
 
 ## Code Structure And Design Pattern:
-<img src="READMEAssets/PlanetAppScreens/ProjectStructure.png" width="230" height="400">
+<img src="READMEAssets/ProjectStructure.png" width="230" height="400">
 ### View:
 1.  **CSDashboardView** – root view for the app.
 2.  **CSDonutView** – view responsible for showing the credit score details view.
@@ -74,7 +74,7 @@ You will need to configure your development team in the app target's **"Signing 
 ## Unit Testing: 
 Apples **XCTest framework** is used to write the unit tests and UI tests for the application.
 Following image illustrates the **test coverage** of the project.
-<img src="READMEAssets/PlanetAppScreens/TestCoverage.png" width="800" height="400">
+<img src="READMEAssets/CSTestCoverage.png" width="800" height="400">
 
 
 ## Future Features And Improvements:
@@ -83,9 +83,9 @@ Following image illustrates the **test coverage** of the project.
 
 ## Application Screens:
 <p float="left">
-<img src="READMEAssets/PlanetAppScreens/Portrait2-iPhone.png" width="250" height="450">
-<img src="READMEAssets/PlanetAppScreens/Portrait1-iPhone.png" width="250" height="450">
-<img src="READMEAssets/PlanetAppScreens/Portrait2-iPhone.png" width="250" height="450">
+<img src="READMEAssets/Loading.png" width="250" height="450">
+<img src="READMEAssets/Lightmode.png" width="250" height="450">
+<img src="READMEAssets/Darkmode.png" width="250" height="450">
 </p>
 
 
