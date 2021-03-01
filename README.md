@@ -1,4 +1,4 @@
-# CreditScore
+# Credit Score
 
 ## Table of contents
 * [Introduction](#introduction)
@@ -23,7 +23,7 @@ The donut displays the credit score value received from the endpoint.
 </p>
 
 ## Features:
-1.  Consumption of API (https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values) to fetch the credit score report. (URL Session,Codable)
+1.  Consumption of API (https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values) to fetch the credit score report. (URL Session, Codable)
 2.  Create Donut view to display the score report fetched from API. (SwiftUI)
 3.  Fetch credit score report, calculate user credit score percentage value to show the donut progress bar. (SwiftUI)
 4.  Error handling throughout the application.
@@ -31,14 +31,14 @@ The donut displays the credit score value received from the endpoint.
 6.  Dark mode support.
 
 ## Software And Technologies:
-* MacOS : Big Sur (11.0.1)
-* Xcode: 12.3
+* MacOS: Big Sur (11.0.1)
+* XCode: 12.3
 * Minimum iOS version: 14.0
 * Swift: 5
 * SwiftUI
 
 ## Setup:
-To run this project, open the ClearScore.xcodeproj in Xcode and you should be able to run it on the desired simulator without any changes(iPhone).
+To run this project, open the ClearScore.xcodeproj in XCode and you should be able to run it on the desired simulator without any changes(iPhone).
 You will need to configure your development team in the app target's **"Signing & Capabilities"** tab in order to run it on real device.
 
 ## Approach:
@@ -75,10 +75,10 @@ You will need to configure your development team in the app target's **"Signing 
 
 ### Utility:
 1.  **CSConstants** – responsible for maintaining the constants used in app.
-2.  **Types** - contains enum types used in app to specify https methodType and APIs result(success/failure).
+2.  **Types** - contains enum types used in app to specify https method type and APIs result(success/failure).
 
 ### Other:
-1.  **CreditReportDelegate** - protocol to notify when the score data is available.(Notify Success or Failure)
+1.  **CreditReportDelegate** - protocol to notify when the score data is available. (Notify Success or Failure)
 
 ## Unit Testing: 
 Apples **XCTest framework** is used to write the unit tests and UI tests for the application.
