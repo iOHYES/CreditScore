@@ -31,10 +31,16 @@ class when_the_credit_score_is_fetched_from_api: XCTestCase {
     XCTAssertNotNil(scoreLabel.label, "Value for credit score nil")
   }
   
-  func test_should_show_out_of_credit_score_fetched_from_api()
+  func test_should_show_out_of_credit_score_label()
   {
     let outOfScoreLabel = self.app.staticTexts["outOfScoreLabel"]
-    XCTAssertNotNil(outOfScoreLabel.label, "Value for out of max score nil")
+    XCTAssertNotNil("out of", outOfScoreLabel.label)
+  }
+  
+  func test_should_show_out_of_credit_score_fetched_from_api()
+  {
+    let maxScoreValueLabel = self.app.staticTexts["maxScoreValueLabel"]
+    XCTAssertNotNil(maxScoreValueLabel.label, "Value of max score nil")
   }
   
   func test_app_orientation(){

@@ -7,12 +7,13 @@
 
 import Foundation
 
+// MARK: Http Method Type
 enum MethodType {
   case POST
   case GET
 }
 
-/// Enum for Success and Error scenarios
+// MARK: Success and Error scenarios Type
 enum Result<T> {
   case Success(T)
   case Error(String)

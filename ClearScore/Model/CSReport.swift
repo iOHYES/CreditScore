@@ -1,5 +1,5 @@
 //
-//  CreditReport.swift
+//  CSReport.swift
 //  ClearScore
 //
 //  Created by Ujjwal on 28/02/2021.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - CreditReport
-struct CreditReport: Codable {
+// MARK: - CSReport
+struct CSReport: Codable {
     let creditReportInfo: CreditReportInfo
 }
 

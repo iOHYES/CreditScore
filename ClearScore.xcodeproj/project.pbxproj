@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C04A87025ED221100C6E2A2 /* CSDonutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04A86F25ED221100C6E2A2 /* CSDonutView.swift */; };
+		0C04A87525ED259400C6E2A2 /* CSDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04A87425ED259400C6E2A2 /* CSDetailsView.swift */; };
+		0C04A88525ED2C4D00C6E2A2 /* ScoreReportDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04A88425ED2C4D00C6E2A2 /* ScoreReportDataTest.swift */; };
+		0C04A88B25ED30DA00C6E2A2 /* score.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C04A88A25ED30DA00C6E2A2 /* score.json */; };
+		0C04A8B625ED470100C6E2A2 /* CSDonutProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04A8B525ED470100C6E2A2 /* CSDonutProgressView.swift */; };
 		0CDC984925EB0B8F00B4AAD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC984825EB0B8F00B4AAD6 /* AppDelegate.swift */; };
-		0CDC984D25EB0B8F00B4AAD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC984C25EB0B8F00B4AAD6 /* ContentView.swift */; };
+		0CDC984D25EB0B8F00B4AAD6 /* CSDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC984C25EB0B8F00B4AAD6 /* CSDashboardView.swift */; };
 		0CDC984F25EB0B9100B4AAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC984E25EB0B9100B4AAD6 /* Assets.xcassets */; };
 		0CDC985225EB0B9100B4AAD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC985125EB0B9100B4AAD6 /* Preview Assets.xcassets */; };
 		0CDC985525EB0B9100B4AAD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC985325EB0B9100B4AAD6 /* LaunchScreen.storyboard */; };
 		0CDC986025EB0B9100B4AAD6 /* ClearScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC985F25EB0B9100B4AAD6 /* ClearScoreTests.swift */; };
 		0CDC986B25EB0B9100B4AAD6 /* ClearScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC986A25EB0B9100B4AAD6 /* ClearScoreUITests.swift */; };
-		0CDC988625EBD3AF00B4AAD6 /* CreditScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC988525EBD3AF00B4AAD6 /* CreditScoreViewModel.swift */; };
+		0CDC988625EBD3AF00B4AAD6 /* CSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC988525EBD3AF00B4AAD6 /* CSViewModel.swift */; };
 		0CDC988E25EBD40500B4AAD6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */; };
-		0CDC989425EBD43000B4AAD6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC989325EBD43000B4AAD6 /* Constant.swift */; };
+		0CDC989425EBD43000B4AAD6 /* CSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC989325EBD43000B4AAD6 /* CSConstant.swift */; };
 		0CDC98A225EBD48500B4AAD6 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */; };
 		0CDC98A325EBD48500B4AAD6 /* CreditScoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98A025EBD48500B4AAD6 /* CreditScoreAPI.swift */; };
-		0CDC98AA25EBD4A000B4AAD6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98A925EBD4A000B4AAD6 /* Response.swift */; };
-		0CDC98B025EBD58800B4AAD6 /* CreditReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98AF25EBD58800B4AAD6 /* CreditReport.swift */; };
-		0CDC98BB25EBD81000B4AAD6 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98BA25EBD81000B4AAD6 /* Types.swift */; };
+		0CDC98AA25EBD4A000B4AAD6 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98A925EBD4A000B4AAD6 /* ResponseDecoder.swift */; };
+		0CDC98B025EBD58800B4AAD6 /* CSReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98AF25EBD58800B4AAD6 /* CSReport.swift */; };
+		0CDC98BB25EBD81000B4AAD6 /* CSTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98BA25EBD81000B4AAD6 /* CSTypes.swift */; };
 		0CDC98CC25EBFC0000B4AAD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98CB25EBFC0000B4AAD6 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,9 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C04A86F25ED221100C6E2A2 /* CSDonutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDonutView.swift; sourceTree = "<group>"; };
+		0C04A87425ED259400C6E2A2 /* CSDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDetailsView.swift; sourceTree = "<group>"; };
+		0C04A88425ED2C4D00C6E2A2 /* ScoreReportDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreReportDataTest.swift; sourceTree = "<group>"; };
+		0C04A88A25ED30DA00C6E2A2 /* score.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = score.json; sourceTree = "<group>"; };
+		0C04A8B525ED470100C6E2A2 /* CSDonutProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDonutProgressView.swift; sourceTree = "<group>"; };
 		0CDC984525EB0B8F00B4AAD6 /* ClearScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDC984825EB0B8F00B4AAD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CDC984C25EB0B8F00B4AAD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0CDC984C25EB0B8F00B4AAD6 /* CSDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDashboardView.swift; sourceTree = "<group>"; };
 		0CDC984E25EB0B9100B4AAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CDC985125EB0B9100B4AAD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CDC985425EB0B9100B4AAD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,14 +66,14 @@
 		0CDC986625EB0B9100B4AAD6 /* ClearScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDC986A25EB0B9100B4AAD6 /* ClearScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreUITests.swift; sourceTree = "<group>"; };
 		0CDC986C25EB0B9100B4AAD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CDC988525EBD3AF00B4AAD6 /* CreditScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewModel.swift; sourceTree = "<group>"; };
+		0CDC988525EBD3AF00B4AAD6 /* CSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSViewModel.swift; sourceTree = "<group>"; };
 		0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		0CDC989325EBD43000B4AAD6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0CDC989325EBD43000B4AAD6 /* CSConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSConstant.swift; sourceTree = "<group>"; };
 		0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		0CDC98A025EBD48500B4AAD6 /* CreditScoreAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditScoreAPI.swift; sourceTree = "<group>"; };
-		0CDC98A925EBD4A000B4AAD6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		0CDC98AF25EBD58800B4AAD6 /* CreditReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReport.swift; sourceTree = "<group>"; };
-		0CDC98BA25EBD81000B4AAD6 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		0CDC98A925EBD4A000B4AAD6 /* ResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		0CDC98AF25EBD58800B4AAD6 /* CSReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSReport.swift; sourceTree = "<group>"; };
+		0CDC98BA25EBD81000B4AAD6 /* CSTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTypes.swift; sourceTree = "<group>"; };
 		0CDC98CB25EBFC0000B4AAD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C04A88925ED308200C6E2A2 /* TestAssets */ = {
+			isa = PBXGroup;
+			children = (
+				0C04A88A25ED30DA00C6E2A2 /* score.json */,
+			);
+			path = TestAssets;
+			sourceTree = "<group>";
+		};
 		0CDC983C25EB0B8F00B4AAD6 = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +159,10 @@
 		0CDC985E25EB0B9100B4AAD6 /* ClearScoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				0C04A88925ED308200C6E2A2 /* TestAssets */,
 				0CDC985F25EB0B9100B4AAD6 /* ClearScoreTests.swift */,
 				0CDC986125EB0B9100B4AAD6 /* Info.plist */,
+				0C04A88425ED2C4D00C6E2A2 /* ScoreReportDataTest.swift */,
 			);
 			path = ClearScoreTests;
 			sourceTree = "<group>";
@@ -159,7 +179,7 @@
 		0CDC988325EBD34700B4AAD6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC98A925EBD4A000B4AAD6 /* Response.swift */,
+				0CDC98A925EBD4A000B4AAD6 /* ResponseDecoder.swift */,
 				0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */,
 				0CDC98A025EBD48500B4AAD6 /* CreditScoreAPI.swift */,
 				0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */,
@@ -170,7 +190,7 @@
 		0CDC988425EBD36100B4AAD6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC988525EBD3AF00B4AAD6 /* CreditScoreViewModel.swift */,
+				0CDC988525EBD3AF00B4AAD6 /* CSViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -178,8 +198,8 @@
 		0CDC989225EBD41600B4AAD6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC989325EBD43000B4AAD6 /* Constant.swift */,
-				0CDC98BA25EBD81000B4AAD6 /* Types.swift */,
+				0CDC989325EBD43000B4AAD6 /* CSConstant.swift */,
+				0CDC98BA25EBD81000B4AAD6 /* CSTypes.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -187,7 +207,7 @@
 		0CDC98A825EBD49300B4AAD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC98AF25EBD58800B4AAD6 /* CreditReport.swift */,
+				0CDC98AF25EBD58800B4AAD6 /* CSReport.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,7 +215,10 @@
 		0CDC98AE25EBD4AA00B4AAD6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC984C25EB0B8F00B4AAD6 /* ContentView.swift */,
+				0CDC984C25EB0B8F00B4AAD6 /* CSDashboardView.swift */,
+				0C04A86F25ED221100C6E2A2 /* CSDonutView.swift */,
+				0C04A87425ED259400C6E2A2 /* CSDetailsView.swift */,
+				0C04A8B525ED470100C6E2A2 /* CSDonutProgressView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C04A88B25ED30DA00C6E2A2 /* score.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,16 +355,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CDC98A225EBD48500B4AAD6 /* EndpointType.swift in Sources */,
-				0CDC989425EBD43000B4AAD6 /* Constant.swift in Sources */,
+				0CDC989425EBD43000B4AAD6 /* CSConstant.swift in Sources */,
 				0CDC988E25EBD40500B4AAD6 /* NetworkManager.swift in Sources */,
 				0CDC984925EB0B8F00B4AAD6 /* AppDelegate.swift in Sources */,
-				0CDC988625EBD3AF00B4AAD6 /* CreditScoreViewModel.swift in Sources */,
+				0CDC988625EBD3AF00B4AAD6 /* CSViewModel.swift in Sources */,
+				0C04A87525ED259400C6E2A2 /* CSDetailsView.swift in Sources */,
 				0CDC98A325EBD48500B4AAD6 /* CreditScoreAPI.swift in Sources */,
-				0CDC98AA25EBD4A000B4AAD6 /* Response.swift in Sources */,
+				0CDC98AA25EBD4A000B4AAD6 /* ResponseDecoder.swift in Sources */,
+				0C04A8B625ED470100C6E2A2 /* CSDonutProgressView.swift in Sources */,
 				0CDC98CC25EBFC0000B4AAD6 /* SceneDelegate.swift in Sources */,
-				0CDC98BB25EBD81000B4AAD6 /* Types.swift in Sources */,
-				0CDC98B025EBD58800B4AAD6 /* CreditReport.swift in Sources */,
-				0CDC984D25EB0B8F00B4AAD6 /* ContentView.swift in Sources */,
+				0C04A87025ED221100C6E2A2 /* CSDonutView.swift in Sources */,
+				0CDC98BB25EBD81000B4AAD6 /* CSTypes.swift in Sources */,
+				0CDC98B025EBD58800B4AAD6 /* CSReport.swift in Sources */,
+				0CDC984D25EB0B8F00B4AAD6 /* CSDashboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C04A88525ED2C4D00C6E2A2 /* ScoreReportDataTest.swift in Sources */,
 				0CDC986025EB0B9100B4AAD6 /* ClearScoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,8 +536,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ClearScore/Preview Content\"";
+				DEVELOPMENT_TEAM = UD89ZR6LZW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ClearScore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -517,8 +547,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uc.ClearScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc.ClearScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -529,8 +560,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ClearScore/Preview Content\"";
+				DEVELOPMENT_TEAM = UD89ZR6LZW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ClearScore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -538,8 +571,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uc.ClearScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc.ClearScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

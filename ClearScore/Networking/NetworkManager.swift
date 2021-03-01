@@ -8,13 +8,15 @@
 import Foundation
 import CoreData
 
-/// Class responsible for handling the network calls to Planet API
+/// Class responsible for handling the network calls
 class NetworkManager
-{
-  static let shared = NetworkManager()
-  
-  /// Function to fetch list of planets from the given url
-  /// - Parameter completion:Clouser with Enum with Tuples for Success and Failure condition
+{  
+  /// - Parameters:
+  ///   - method: Function to fetch score data from the given url
+  ///   - endpoint: enum to get the base url and url params if any
+  ///   - dictionary: parameter dictionary for post requests
+  ///   - type: generic  data type for data model
+  ///   - completion: clouser to return success or failure
   func getData<T: Codable>(method: MethodType,
                            endpoint: CreditScoreAPI,
                            dictionary:[String:String]?,
@@ -23,12 +25,12 @@ class NetworkManager
     
     /// Get the urlString from constants
     guard let urlString = endpoint.path.isEmpty ? "\(endpoint.baseURL)" : endpoint.baseURL.appendingPathComponent(endpoint.path).absoluteString.removingPercentEncoding else {
-      return completion(.Error(Constants().kInvalidURLError))
+      return completion(.Error(CSConstants().kInvalidURLError))
     }
     
     /// Create the url from urlString
     guard let url = URL(string: urlString) else {
-      return completion(.Error(Constants().kInvalidURLError))
+      return completion(.Error(CSConstants().kInvalidURLError))
     }
     
     ///Create url request
@@ -40,7 +42,7 @@ class NetworkManager
       request.setValue("application/json", forHTTPHeaderField: "Content-Type")
       if let postBody = dictionary {
         guard let httpBody = try? JSONSerialization.data(withJSONObject: postBody, options: []) else {
-          completion(.Error(Constants().kInvalidPostData))
+          completion(.Error(CSConstants().kInvalidPostData))
           return
         }
         request.httpBody = httpBody
@@ -56,11 +58,11 @@ class NetworkManager
       }
       
       guard let data = data else {
-        return completion(.Error(error?.localizedDescription ?? Constants().KEmptyData))
+        return completion(.Error(error?.localizedDescription ?? CSConstants().KEmptyData))
       }
       
-      let response = Response()
-     
+      let response = ResponseDecoder()
+      
       do {
         let decoded = try response.decode(type.self, data: data)
         completion(.Success(decoded!))

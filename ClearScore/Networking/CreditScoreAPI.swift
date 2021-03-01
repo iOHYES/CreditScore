@@ -7,10 +7,13 @@
 
 import Foundation
 
+/// Use this enum to create base url and endpoint path
+/// Add additional cases for future API services
 enum CreditScoreAPI {
   case mockCreditValues
 }
 
+/// Create base url and path components based on the enum case.
 extension CreditScoreAPI: EndpointType
 {
   var baseURL: URL {

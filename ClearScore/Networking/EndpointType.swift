@@ -7,10 +7,9 @@
 
 import Foundation
 
-protocol EndpointType {
-
-    var baseURL: URL { get }
-
-    var path: String { get }
-
+/// Protocol to implement for url creation
+protocol EndpointType
+{
+  var baseURL: URL { get }
+  var path: String { get }
 }

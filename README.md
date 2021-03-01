@@ -45,21 +45,36 @@ You will need to configure your development team in the app target's **"Signing 
 9.  **Extensions**: Used for adding more functionality to class and modularizing the code.
 
 ## Code Structure And Design Pattern:
-1.  **ContentView** – view responsible for displaying the credit score with progress bar donut view.
-2.  **CreditScoreViewModel** – viewModel responsible for managing the credit score view data.
-3.  **CreditReport** – model used for the credit score json data.
-4.  **NetworkManager** - responsible for managing the network call to get the data from the API.
-5.  **Response** - struct responsible for encoding-decoding of the json resonse of generic type.
-6.  **Constants** – responsible for maintaining the constants used in app.
-7.  **CreditReportDelegate** - protocol to notify when the score data is available.(Notify Success or Failure)
-8.  **EndpointType** - protocol to get the base url and path components.
-9.  **CreditScoreAPI** - enum to specify APIs available for credit score.
-10.  **Types** - contains enum types used in app to specify https methodType and APIs result(success/failure).
+<img src="READMEAssets/PlanetAppScreens/ProjectStructure.png" width="230" height="400">
+### View:
+1.  **CSDashboardView** – root view for the app.
+2.  **CSDonutView** – view responsible for showing the credit score details view.
+3.  **CSDetailsView** – view responsible for showing the credit score labels with values fetched from API.
+4.  **CSDonutProgressView** – donut progress view to display the credit score percentage value.
 
+### Model:
+1.  **CSReport** – model used for the credit score json data.
+
+### ViewModel:
+1.  **CSViewModel** – viewModel responsible for managing the credit score view data.
+
+### Networking:
+1.  **NetworkManager** - responsible for managing the network call to get the data from the API.
+2.  **ResponseDecoder** -  JSON decoder to parse and create the response model using JSONDecoder.
+3.  **EndpointType** - protocol to get the base url and path components.
+4.  **CreditScoreAPI** - enum to specify APIs available for credit score.
+
+### Utility:
+1.  **CSConstants** – responsible for maintaining the constants used in app.
+2.  **Types** - contains enum types used in app to specify https methodType and APIs result(success/failure).
+
+### Other:
+1.  **CreditReportDelegate** - protocol to notify when the score data is available.(Notify Success or Failure)
 
 ## Unit Testing: 
 Apples **XCTest framework** is used to write the unit tests and UI tests for the application.
 Following image illustrates the **test coverage** of the project.
+<img src="READMEAssets/PlanetAppScreens/TestCoverage.png" width="800" height="400">
 
 
 ## Future Features And Improvements:
@@ -67,7 +82,10 @@ Following image illustrates the **test coverage** of the project.
 2.  Write more Unit Tests.
 
 ## Application Screens:
-*  This is the landing page (Dashboard) of the app, where the Credit Score is shown inside donut view with a donut progress bar.
-* Tap to Retry button is shown to allow users to fetch the credit score in case of any failure.
+<p float="left">
+<img src="READMEAssets/PlanetAppScreens/Portrait2-iPhone.png" width="250" height="450">
+<img src="READMEAssets/PlanetAppScreens/Portrait1-iPhone.png" width="250" height="450">
+<img src="READMEAssets/PlanetAppScreens/Portrait2-iPhone.png" width="250" height="450">
+</p>
 
 
