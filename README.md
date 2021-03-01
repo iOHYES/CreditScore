@@ -2,6 +2,7 @@
 
 ## Table of contents
 * [Introduction](#introduction)
+* [Application Screens](#application-screens)
 * [Features](#features)
 * [Software And Technologies](#software-and-technologies)
 * [Setup](#setup)
@@ -9,11 +10,17 @@
 * [Code Structure And Design Pattern](#code-structure-and-design-pattern)
 * [Unit Testing](#unit-testing)
 * [Future Features And Improvements](#future-features-and-improvements)
-* [Application Screens](#application-screens)
 
 ## Introduction:
 iOS application to display a donut view which pulls the **Credit Score** information from the given endpoint, built with combination of Swift, SwiftUI.
 The donut displays the credit score value received from the endpoint.
+
+## Application Screens:
+<p float="left">
+<img src="READMEAssets/Loading.png" width="250" height="450">
+<img src="READMEAssets/Lightmode.png" width="250" height="450">
+<img src="READMEAssets/Darkmode.png" width="250" height="450">
+</p>
 
 ## Features:
 1.  Consumption of API (https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values) to fetch the credit score report. (URL Session,Codable)
@@ -45,7 +52,9 @@ You will need to configure your development team in the app target's **"Signing 
 9.  **Extensions**: Used for adding more functionality to class and modularizing the code.
 
 ## Code Structure And Design Pattern:
+
 <img src="READMEAssets/ProjectStructure.png" width="230" height="400">
+
 ### View:
 1.  **CSDashboardView** – root view for the app.
 2.  **CSDonutView** – view responsible for showing the credit score details view.
@@ -74,18 +83,14 @@ You will need to configure your development team in the app target's **"Signing 
 ## Unit Testing: 
 Apples **XCTest framework** is used to write the unit tests and UI tests for the application.
 Following image illustrates the **test coverage** of the project.
+
 <img src="READMEAssets/CSTestCoverage.png" width="800" height="400">
 
 
 ## Future Features And Improvements:
 1.  Parse and show more details of the credit score report.
-2.  Write more Unit Tests.
+2.  Write more Unit Tests and UI test.
+3.  Animations for score label and other views.
 
-## Application Screens:
-<p float="left">
-<img src="READMEAssets/Loading.png" width="250" height="450">
-<img src="READMEAssets/Lightmode.png" width="250" height="450">
-<img src="READMEAssets/Darkmode.png" width="250" height="450">
-</p>
 
 
