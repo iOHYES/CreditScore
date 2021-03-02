@@ -65,13 +65,14 @@ You will need to configure your development team in the app target's **"Signing 
 1.  **CSReport** – model used for the credit score json data.
 
 ### ViewModel:
-1.  **CSViewModel** – viewModel responsible for managing the credit score view data.
+1.  **CSReortViewModel** – viewModel responsible for managing the credit score view data.
 
 ### Networking:
 1.  **NetworkManager** - responsible for managing the network call to get the data from the API.
-2.  **ResponseDecoder** -  JSON decoder to parse and create the response model using JSONDecoder.
-3.  **EndpointType** - protocol to get the base url and path components.
-4.  **CreditScoreAPI** - enum to specify APIs available for credit score.
+2.  **CSCreditReportService** - responsible for managing the API service for credit score report data.
+3.  **ResponseDecoder** -  JSON decoder to parse and create the response model using JSONDecoder.
+4.  **EndpointType** - protocol to get the base url and path components.
+5.  **CreditScoreAPI** - enum to specify APIs available for credit score.
 
 ### Utility:
 1.  **CSConstants** – responsible for maintaining the constants used in app.
