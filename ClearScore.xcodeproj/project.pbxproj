@@ -19,7 +19,7 @@
 		0CDC985525EB0B9100B4AAD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC985325EB0B9100B4AAD6 /* LaunchScreen.storyboard */; };
 		0CDC986025EB0B9100B4AAD6 /* ClearScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC985F25EB0B9100B4AAD6 /* ClearScoreTests.swift */; };
 		0CDC986B25EB0B9100B4AAD6 /* ClearScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC986A25EB0B9100B4AAD6 /* ClearScoreUITests.swift */; };
-		0CDC988625EBD3AF00B4AAD6 /* CSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC988525EBD3AF00B4AAD6 /* CSViewModel.swift */; };
+		0CDC988625EBD3AF00B4AAD6 /* CSCreditReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC988525EBD3AF00B4AAD6 /* CSCreditReportService.swift */; };
 		0CDC988E25EBD40500B4AAD6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */; };
 		0CDC989425EBD43000B4AAD6 /* CSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC989325EBD43000B4AAD6 /* CSConstant.swift */; };
 		0CDC98A225EBD48500B4AAD6 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */; };
@@ -28,6 +28,7 @@
 		0CDC98B025EBD58800B4AAD6 /* CSReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98AF25EBD58800B4AAD6 /* CSReport.swift */; };
 		0CDC98BB25EBD81000B4AAD6 /* CSTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98BA25EBD81000B4AAD6 /* CSTypes.swift */; };
 		0CDC98CC25EBFC0000B4AAD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC98CB25EBFC0000B4AAD6 /* SceneDelegate.swift */; };
+		245FCCB525EE429600B87321 /* CSReortViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245FCCB425EE429600B87321 /* CSReortViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,7 @@
 		0CDC986625EB0B9100B4AAD6 /* ClearScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDC986A25EB0B9100B4AAD6 /* ClearScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreUITests.swift; sourceTree = "<group>"; };
 		0CDC986C25EB0B9100B4AAD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CDC988525EBD3AF00B4AAD6 /* CSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSViewModel.swift; sourceTree = "<group>"; };
+		0CDC988525EBD3AF00B4AAD6 /* CSCreditReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCreditReportService.swift; sourceTree = "<group>"; };
 		0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0CDC989325EBD43000B4AAD6 /* CSConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSConstant.swift; sourceTree = "<group>"; };
 		0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		0CDC98AF25EBD58800B4AAD6 /* CSReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSReport.swift; sourceTree = "<group>"; };
 		0CDC98BA25EBD81000B4AAD6 /* CSTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTypes.swift; sourceTree = "<group>"; };
 		0CDC98CB25EBFC0000B4AAD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		245FCCB425EE429600B87321 /* CSReortViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSReortViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,7 @@
 				0CDC98AE25EBD4AA00B4AAD6 /* View */,
 				0CDC98A825EBD49300B4AAD6 /* Model */,
 				0CDC988425EBD36100B4AAD6 /* ViewModel */,
-				0CDC988325EBD34700B4AAD6 /* Networking */,
+				0CDC988325EBD34700B4AAD6 /* Network */,
 				0CDC989225EBD41600B4AAD6 /* Utility */,
 				0CDC984825EB0B8F00B4AAD6 /* AppDelegate.swift */,
 				0CDC98CB25EBFC0000B4AAD6 /* SceneDelegate.swift */,
@@ -160,9 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				0C04A88925ED308200C6E2A2 /* TestAssets */,
+				0C04A88425ED2C4D00C6E2A2 /* ScoreReportDataTest.swift */,
 				0CDC985F25EB0B9100B4AAD6 /* ClearScoreTests.swift */,
 				0CDC986125EB0B9100B4AAD6 /* Info.plist */,
-				0C04A88425ED2C4D00C6E2A2 /* ScoreReportDataTest.swift */,
 			);
 			path = ClearScoreTests;
 			sourceTree = "<group>";
@@ -176,21 +178,20 @@
 			path = ClearScoreUITests;
 			sourceTree = "<group>";
 		};
-		0CDC988325EBD34700B4AAD6 /* Networking */ = {
+		0CDC988325EBD34700B4AAD6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC98A925EBD4A000B4AAD6 /* ResponseDecoder.swift */,
-				0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */,
-				0CDC98A025EBD48500B4AAD6 /* CreditScoreAPI.swift */,
-				0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */,
+				245FCCC125EE4C5C00B87321 /* Manager */,
+				245FCCBC25EE4C1000B87321 /* Services */,
+				245FCCBD25EE4C3000B87321 /* Helper */,
 			);
-			path = Networking;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		0CDC988425EBD36100B4AAD6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0CDC988525EBD3AF00B4AAD6 /* CSViewModel.swift */,
+				245FCCB425EE429600B87321 /* CSReortViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -216,11 +217,45 @@
 			isa = PBXGroup;
 			children = (
 				0CDC984C25EB0B8F00B4AAD6 /* CSDashboardView.swift */,
+				245FCCC825EE4C9A00B87321 /* CreditScore */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		245FCCBC25EE4C1000B87321 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0CDC988525EBD3AF00B4AAD6 /* CSCreditReportService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		245FCCBD25EE4C3000B87321 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0CDC98A925EBD4A000B4AAD6 /* ResponseDecoder.swift */,
+				0CDC989F25EBD48500B4AAD6 /* EndpointType.swift */,
+				0CDC98A025EBD48500B4AAD6 /* CreditScoreAPI.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		245FCCC125EE4C5C00B87321 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0CDC988D25EBD40500B4AAD6 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		245FCCC825EE4C9A00B87321 /* CreditScore */ = {
+			isa = PBXGroup;
+			children = (
 				0C04A86F25ED221100C6E2A2 /* CSDonutView.swift */,
 				0C04A87425ED259400C6E2A2 /* CSDetailsView.swift */,
 				0C04A8B525ED470100C6E2A2 /* CSDonutProgressView.swift */,
 			);
-			path = View;
+			path = CreditScore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +393,7 @@
 				0CDC989425EBD43000B4AAD6 /* CSConstant.swift in Sources */,
 				0CDC988E25EBD40500B4AAD6 /* NetworkManager.swift in Sources */,
 				0CDC984925EB0B8F00B4AAD6 /* AppDelegate.swift in Sources */,
-				0CDC988625EBD3AF00B4AAD6 /* CSViewModel.swift in Sources */,
+				0CDC988625EBD3AF00B4AAD6 /* CSCreditReportService.swift in Sources */,
 				0C04A87525ED259400C6E2A2 /* CSDetailsView.swift in Sources */,
 				0CDC98A325EBD48500B4AAD6 /* CreditScoreAPI.swift in Sources */,
 				0CDC98AA25EBD4A000B4AAD6 /* ResponseDecoder.swift in Sources */,
@@ -367,6 +402,7 @@
 				0C04A87025ED221100C6E2A2 /* CSDonutView.swift in Sources */,
 				0CDC98BB25EBD81000B4AAD6 /* CSTypes.swift in Sources */,
 				0CDC98B025EBD58800B4AAD6 /* CSReport.swift in Sources */,
+				245FCCB525EE429600B87321 /* CSReortViewModel.swift in Sources */,
 				0CDC984D25EB0B8F00B4AAD6 /* CSDashboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

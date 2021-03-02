@@ -8,15 +8,15 @@
 import Foundation
 
 /// Protocol to notify Success or Failure of the API call
-protocol CreditReportDelegate {
+protocol CreditReportServiceDelegate {
   func didReciveResponse(response: CSReport)
   func didReciveError(error: String)
 }
 
 /// ViewModel for handling the data required for credit score view
-struct CSViewModel
+struct CSCreditReportService
 {
-  var delegate:CreditReportDelegate?
+  var delegate:CreditReportServiceDelegate?
   
   /// Function to make API call to get the credit score report data
   func getCreditReport()
