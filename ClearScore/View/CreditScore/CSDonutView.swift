@@ -12,7 +12,6 @@ struct CSDonutView: View
 {
   @Environment(\.colorScheme) var colorScheme
   
-  // MARK:- Private properties with state observers
     
     @ObservedObject var viewModel: CSReortViewModel
     
@@ -78,6 +77,4 @@ extension CSDonutView
   
 }
 
-// MARK:- Extension to handle get score API and progress view UI
 
-// MARK:- Extension to implement the CreditReport Delegate methods

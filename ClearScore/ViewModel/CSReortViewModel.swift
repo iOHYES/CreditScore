@@ -9,7 +9,10 @@ import Foundation
 import UIKit
 import SwiftUI
 
+/// ViewModel for handling the data required for credit score view
 class CSReortViewModel:ObservableObject {
+
+  // MARK:- Published properties
 
     @Published  var score: String            = ""
     @Published  var maxScoreValue: String    = ""
@@ -18,7 +21,9 @@ class CSReortViewModel:ObservableObject {
     @Published  var isLoading                = true
     @Published  var isAlert                  = false
     
-    var service = CSCreditReportService()
+  // MARK:- Private properties
+
+    private var service = CSCreditReportService()
 
     init() {
         self.getScoreData()
@@ -40,8 +45,9 @@ class CSReortViewModel:ObservableObject {
         }
       }
     }
-    
 }
+
+// MARK:- Extension to implement the CreditReportService Delegate methods
 
 extension CSReortViewModel: CreditReportServiceDelegate {
     
